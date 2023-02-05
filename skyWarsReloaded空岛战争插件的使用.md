@@ -4,7 +4,7 @@
 
 ## 使用方法
 
-导入新地图(先完成slimeWorldManager的操作)
+导入新地图(需要先完成slimeWorldManager的操作)
 
 1. 在`/home/container/plugins/Skywars/mapsData`下，创建`<your-map-name>.yml`
 2. 使用`/sw reload`
