@@ -24,7 +24,8 @@ slimeWorldManager(SWM)是一个世界管理器，其特点是使用slime格式�
     - `data-source`在这里我们直接定为file
     - `new-world-name`新世界的名称，可不填，默认为文件夹的名称
 5. 可能会提示确认，重新输入一遍同样的命令即可
-6. 此时已经导入成功了，可以用指令`/swm goto <world>`前往新导入的世界，如果不需要可以直接删除根目录下原版的世界了
+6. 此时已经导入成功了，在进入之前还需要先加载，使用指令`/swm load <world>`加载新导入的世界
+7. 之后可以用指令`/swm goto <world>`前往新导入的世界，如果不需要可以直接删除根目录下原版的世界了
 
 其他的管理相关指令可以看[这里](https://github.com/Grinderwolf/Slime-World-Manager/blob/develop/.docs/usage/commands-and-permissions.md)
 
