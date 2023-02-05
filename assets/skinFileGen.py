@@ -1,0 +1,18 @@
+import requests
+playerName = input("Player Name: ")
+print("Reading UUID...")
+uuidJson = requests.get("https://api.mojang.com/users/profiles/minecraft/"+playerName)
+uuidObj = uuidJson.json()
+uuid = uuidObj["id"]
+print("Reading skin...")
+skinJson = requests.get("https://sessionserver.mojang.com/session/minecraft/profile/"+uuid+"?unsigned=false")
+skinObj = skinJson.json()
+print("Writing file...")
+skinFile = open(playerName.lower()+".skin","w")
+skinFile.write(skinObj["properties"][0]["value"])
+skinFile.write("\n")
+skinFile.write(skinObj["properties"][0]["signature"])
+skinFile.write("\n")
+skinFile.write("3376656000000")
+skinFile.close()
+print("Complete.")
