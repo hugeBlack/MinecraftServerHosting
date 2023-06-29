@@ -17,3 +17,10 @@
 
 设置玩家出生点`/swmap spawn player`
 设置宝箱`/swmap chesttype <your-map-name>`
+
+
+## 设置事件的问题
+
+由于给每一个地图都分别设置事件太麻烦，所以写了个脚本直接对整个文件夹进行操作
+
+[脚本看这里](./assets/SWMapConfigEditor.py)
